@@ -14,7 +14,7 @@ function (x, file, HTML=FALSE) {
       file <- paste(file, ".rtf", sep="")
     }
     output <- file
-    rtf <- RTF(output, font.size=12)
+    rtf <- RTF(output, font.size=8)
     addParagraph(rtf,"Table X.")
     addTable(rtf, x, row.names=TRUE, NA.string="")
     done(rtf)

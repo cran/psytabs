@@ -14,10 +14,10 @@ corTable(data, sd = FALSE)
 
 \arguments{
   \item{data}{
-  Variables for which the correlation matrix should be calculated.
+  data.frame containing the variables for which the correlation matrix should be calculated.
   }
   \item{sd}{
-  Whether the standard derivition should be displayed in the diagonal.
+  logical value that toggles Whether the standard deviation should be displayed in the diagonal.
   }
 }
 

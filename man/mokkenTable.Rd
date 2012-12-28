@@ -13,7 +13,7 @@ mokkenTable(data)
 %- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{data}{
-Variables (i.e. items) for which the table should be generated.
+data.frame containing the variables (i.e. items) for which the table should be created.
 }
 }
 

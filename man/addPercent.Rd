@@ -20,5 +20,5 @@ Table.
 }
 
 \value{
-A table with percent-signs added.
+A table with added percent-signs.
 }

@@ -14,19 +14,19 @@ demographicTable(hor_fact, ver_fact, count = TRUE, percent = TRUE, header = TRUE
 
 \arguments{
   \item{hor_fact}{
-The factor constituting the columns of the table. 
+factor constituting the columns of the table. 
 }
   \item{ver_fact}{
-The factor constituting the rows of the table. 
+factor constituting the rows of the table. 
 }
   \item{count}{
-Whether to include the absolute values in the table.
+logical value that toggles whether to include the absolute values in the table.
 }
   \item{percent}{
-Whether to include the values in percent in the table.
+logical value that toggles whether to include the values in percent in the table.
 }
   \item{header}{
-Whether to include a header for the row factor.
+logical value that toggles whether to include a header for the row factor.
 }
 }
 
