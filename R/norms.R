@@ -1,8 +1,8 @@
 norms <- 
   function (sumscores, from, to, statistics = "PR") {
     sumscores.range <- from:to
-    xecdf <- ecdf(sumscores)
-    sumscores.z <- (sumscores.range - mean(sumscores, na.rm=TRUE))/sd(sumscores, na.rm=TRUE)
+    xecdf <- stats::ecdf(sumscores)
+    sumscores.z <- (sumscores.range - mean(sumscores, na.rm=TRUE))/stats::sd(sumscores, na.rm=TRUE)
     norm.table <- data.frame(Score = sumscores.range) 
     
     if (!is.na(statistics[1])) {

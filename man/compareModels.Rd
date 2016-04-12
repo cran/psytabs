@@ -35,6 +35,6 @@ compareModels(fm0, fm1, scaled = FALSE, fm0.scaling = 1, fm1.scaling = 1)
 Some model comparison statistics.}
 
 \examples{
-###
+### to be added
 1+1
 }

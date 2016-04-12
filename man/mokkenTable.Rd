@@ -22,7 +22,7 @@ data.frame containing the variables (i.e. items) for which the table should be c
 A mokken table.}
 
 \examples{
-data(myData)
-mokkenTable(myData[,1:4])
-#saveTable(mokkenTable(myData[,1:4]), "mokkentable.rtf")
+data(mydata)
+mokkenTable(mydata[,1:4])
+#saveTable(mokkenTable(mydata[,1:4]), "mokkentable.rtf")
 }

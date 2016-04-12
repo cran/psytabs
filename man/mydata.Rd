@@ -1,5 +1,5 @@
-\name{myData}
-\alias{myData}
+\name{mydata}
+\alias{mydata}
 \docType{data}
 \title{
 Simulated data.
@@ -7,7 +7,7 @@ Simulated data.
 \description{
 A simulated data frame made with help of the psych package.
 }
-\usage{data(myData)}
+\usage{data(mydata)}
 \format{
   A data frame with 500 observations on the following 7 variables.
   \describe{
@@ -22,8 +22,8 @@ A simulated data frame made with help of the psych package.
 }
 
 \examples{
-data(myData)
-str(myData)
-summary(myData)
+data(mydata)
+str(mydata)
+summary(mydata)
 }
 \keyword{datasets}

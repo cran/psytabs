@@ -20,8 +20,8 @@ function (hor_fact, ver_fact, count = TRUE, percent = TRUE, header = TRUE) {
     rownames(a) <- levels(ver_fact)
     a <- cbind(a, Overall = round(summary(ver_fact)/length(ver_fact), 3)*100)
     #a <- format(round(a, 1), nsmall = 1) 
-    require(plyr)
-    a <- colwise(addPercent)(a)
+    
+    a <- plyr::colwise(addPercent)(a)
     
     if (count) {
       b <- addPercentToCount(b, a)

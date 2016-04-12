@@ -41,20 +41,26 @@ A dataframe constituting the norm table.
 }
 
 \examples{
-data(myData)
-myData.sumscore <- rowSums(myData[,c("item1", "item2", "item3", "item4")])
+data(mydata)
+mydata.sumscore <- rowSums(mydata[,c("item1", "item2", "item3", "item4")])
 
-tab.1 <- normTable(myData.sumscore, from = 0, to = 12, statistics=c("PR"))
+tab.1 <- normTable(mydata.sumscore, from = 0, to = 12, statistics=c("PR"))
 tab.1
-tab.2 <- normTable(myData.sumscore, from = 0, to = 12, statistics=c("PR", "T", "Stanine"))
+tab.2 <- normTable(mydata.sumscore, from = 0, 
+to = 12, statistics=c("PR", "T", "Stanine"))
 tab.2
-tab.3 <- normTable(myData.sumscore, from = 0, to = 12, statistics=c("PR"), group=myData$sex)
+tab.3 <- normTable(mydata.sumscore, from = 0, 
+to = 12, statistics=c("PR"), group=mydata$sex)
 tab.3
-tab.4 <- normTable(myData.sumscore, from = 0, to = 12, statistics=c("PR", "T"), group=myData$employment)
+tab.4 <- normTable(mydata.sumscore, from = 0, 
+to = 12, statistics=c("PR", "T"), group=mydata$employment)
 tab.4
-tab.5 <- normTable(myData.sumscore, from = 0, to = 12, statistics=c("T"), group=list(myData$sex, myData$employment))
+tab.5 <- normTable(mydata.sumscore, from = 0, 
+to = 12, statistics=c("T"), group=list(mydata$sex, mydata$employment))
 tab.5
-list.5 <- normTable(myData.sumscore, from = 0, to = 12, statistics=c("PR", "T", "Z", "z"), group=list(myData$sex, myData$employment), as.list=TRUE)
+list.5 <- normTable(mydata.sumscore, from = 0, 
+to = 12, statistics=c("PR", "T", "Z", "z"), 
+group=list(mydata$sex, mydata$employment), as.list=TRUE)
 list.5
 #saveTable(tab.2, "normTable.rtf")
 }

@@ -24,25 +24,32 @@ Please note that if the scaled chi-squared statistic is used a special chi-squar
 A measurement invariance table.}
 
 \examples{
+#Must have semTools and lavaan installed
 library(semTools)
+library(lavaan)
+
 #Example taken from the semTools package
 HW.model <- ' visual =~ x1 + x2 + x3
               textual =~ x4 + x5 + x6
               speed =~ x7 + x8 + x9 '
 
-mi.result <- measurementInvariance(HW.model, data=HolzingerSwineford1939, group="school")
+mi.result <- measurementInvariance(HW.model, 
+data=HolzingerSwineford1939, group="school")
 tab.1 <- measurementInvarianceTable(mi.result)
 tab.1
 
-mi.strict.result <- measurementInvariance(HW.model, data=HolzingerSwineford1939, strict=TRUE, group="school")
+mi.strict.result <- measurementInvariance(HW.model, 
+data=HolzingerSwineford1939, strict=TRUE, group="school")
 tab.2 <- measurementInvarianceTable(mi.strict.result)
 tab.2
 
-mi.robust.result <- measurementInvariance(HW.model, data=HolzingerSwineford1939, estimator="MLM", group="school")
+mi.robust.result <- measurementInvariance(HW.model, 
+data=HolzingerSwineford1939, estimator="MLM", group="school")
 tab.3 <- measurementInvarianceTable(mi.robust.result)
 tab.3
 
-mi.robstrict.result <- measurementInvariance(HW.model, data=HolzingerSwineford1939, estimator="MLM", strict=TRUE, group="school")
+mi.robstrict.result <- measurementInvariance(HW.model, 
+data=HolzingerSwineford1939, estimator="MLM", strict=TRUE, group="school")
 tab.4 <- measurementInvarianceTable(mi.robstrict.result)
 tab.4
 

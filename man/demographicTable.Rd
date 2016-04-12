@@ -35,13 +35,13 @@ A dataframe constituting the demographic table.
 }
 
 \examples{
-data(myData)
+data(mydata)
 
-tab.1 <- demographicTable(myData$sex, myData$age_group7)
+tab.1 <- demographicTable(mydata$sex, mydata$age_group7)
 tab.1
-tab.2 <- demographicTable(myData$sex, myData$age_group7, count=FALSE)
+tab.2 <- demographicTable(mydata$sex, mydata$age_group7, count=FALSE)
 tab.2
-tab.3 <- demographicTable(myData$sex, myData$age_group7, percent=FALSE)
+tab.3 <- demographicTable(mydata$sex, mydata$age_group7, percent=FALSE)
 tab.3
 
 #saveTable(tab.1, "demographicTable.rtf")
